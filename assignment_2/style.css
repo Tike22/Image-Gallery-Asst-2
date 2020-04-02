@@ -1,6 +1,7 @@
-h1 {
-  font-family: helvetica, arial, sans-serif;
+h1, h2 {
+  font-family: 'Roboto Mono', monospace;
   text-align: center;
+  font-weight: bold;
 }
 
 body {
@@ -40,7 +41,7 @@ button {
 .displayed-img {
   width: 99%;
   border: ridge 2px;
-  border-color: #140c5e;
+  border: solid 2px whitesmoke;
   border-radius: 4px;
   border-bottom-width: 1.5px;
   padding: 1px;
@@ -52,7 +53,7 @@ button {
   width: 19.5%;
   float: left;
   cursor: pointer; 
-  border: solid 1px #140c5e;
+  border: solid 1px whitesmoke;
   margin-top: 1px;
   margin-left: 1px;
 }
