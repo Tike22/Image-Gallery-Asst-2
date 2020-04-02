@@ -13,15 +13,16 @@ for(let i = 1; i <= 5; i++) {
       displayedImage.src = current.target.src; // selecting the image pathway currently being clicked and setting the display image pathway to that
     }
 }
+
 /* Wiring up the Darken/Lighten button */
 btn.onclick = function() {
-  const brightness = btn.getAttribute('class');
-  if (brightness === 'dark') {
-    btn.setAttribute('class','light');
-    btn.textContent = 'Lighten';
+  const brightness = btn.getAttribute('class'); // making a variable that grab ahold of the button class attribute
+  if (brightness === 'dark') { // checking if the class is set to "dark" then
+    btn.setAttribute('class','light'); // change it to light upon light
+    btn.textContent = 'Lighten'; // changing the text displayed
     overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
-  } 
-  if (brightness === 'light') {
+  }
+  if (brightness === 'light') { // same as before but for dark
     btn.setAttribute('class','dark');
     btn.textContent = 'Darken';
     overlay.style.backgroundColor = 'rgba(0,0,0,0)';
